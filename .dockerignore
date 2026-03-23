@@ -1,0 +1,7 @@
+.git
+.github
+755/
+*.md
+*.zip
+.dockerignore
+Dockerfile
