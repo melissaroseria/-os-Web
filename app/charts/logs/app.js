@@ -1,4 +1,4 @@
-// Modal'ı açma fonksiyonu
+// Modal'ı açma fonksiyonu v2
 function openModal(fileName) {
     const modal = document.getElementById("logModal");
     const logContent = document.getElementById("logContent");
