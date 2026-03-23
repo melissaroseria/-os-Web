@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    color: #fff; /* Metinler beyaz kalıyor arka plan üstünde */
+}
+
+.safari-content {
+    padding: 60px 16px 140px; /* Alttan daha fazla boşluk alt bar için */
+}
+
+.safari-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.safari-header span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.show-all {
+    color: #007AFF;
+    font-size: 15px;
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* İkon Izgarası */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 12px;
+    margin-bottom: 40px;
+}
+
+.icon-item {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: transparent; /* Arka planı ikon kutularının içinden görelim */
+    border-radius: 14px; /* iOS Squircle tarzı */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 6px;
+}
+
+.icon-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px; /* İkonların kendisi de yuvarlak köşeli */
+}
+
+.icon-item span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px; /* Uzun isimler için kesme */
+    margin: 0 auto;
+}
+
+/* iOS Tarzı Kartlar */
+.ios-card {
+    background: rgba(255, 255, 255, 0.1); /* Hafif beyaz, arka plan üstünde buzlu cam hissi */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+/* Gizlilik Raporu Rengi */
+.privacy-report {
+    align-items: center;
+    color: #fff;
+}
+
+.report-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+.report-text p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+/* Okuma Listesi Rengi */
+.reading-list {
+    align-items: center;
+}
+
+.reading-text b {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.reading-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #8E8E93;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+/* Alt Arama Çubuğu (Safari Signature) */
+.safari-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.7); /* Koyu ton */
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 10px 10px 35px; /* iOS bar için alt boşluk */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 0.5px solid rgba(255,255,255,0.1);
+    z-index: 1000;
+}
+
+.safari-search-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.address-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    justify-content: center;
+}
+
+.address-bar input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
+
+.size-icon, .reload-icon {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.safari-nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #007AFF;
+    font-size: 20px;
+}
+
+.safari-nav-bar i.disabled {
+    color: rgba(0, 122, 255, 0.3); /* Pasif ikonlar */
+}
